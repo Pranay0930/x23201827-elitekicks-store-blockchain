@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>EliteKicks Store</title>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff3f3; /* light reddish background */
+        }
+
+        /* General Styles */
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .header_section .container-fluid {
+            max-width: 1140px; /* max width according to Bootstrap standards */
+        }
+
+        /* Navbar and Links */
+        .navbar-brand img {
+            height: 40px;
+            width: auto;
+        }
+
+        .navbar {
+            background-color: #d60000; /* deep red background */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .navbar-toggler {
+            background-color: #fff;
+        }
+
+        /* Preloader */
+        .preloder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(228, 213, 213, 0.95);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 9999;
+        }
+
+        .loder {
+            border: 5px solid #ff8787;
+            border-top-color: #d60000; /* dark red, similar to football theme */
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Link and Button Styles */
+        a:hover, button:hover {
+            opacity: 0.8;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Custom theme and responsiveness */
+        .hero_area {
+            background-color: #d60000; /* Red background for header */
+            color: #ffffff;
+        }
+
+        .detail-box {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .detail-box h5 {
+            color: #d60000; /* Theme color for headings */
+        }
+
+        .discount_section {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 0.25rem;
+            background-color: #ffebeb; /* Light red background */
+            border: 1px solid #d60000;
+        }
+
+        .button {
+            background-color: #d60000; /* Red button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="sub_page">
+    <div class="preloder" style="display:none;">
+        <div class="loder"></div>
+    </div>
+    <div class="hero_area">
+        <!-- header section starts -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                    <a class="navbar-brand" href="/">
+                        <img src="images/logo.png" alt="EliteKicks Logo">
+                        <span>EliteKicks Store</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+    </div>
+
+    <div class="row container-fluid">
+        <div class="col-md-6">
+            <section class="discount_section mt-5 mb-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="detail-box text-center">
+                                <script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
+                                <div id="crypto-widget-CoinList" data-theme="dark" data-design="modern" data-coin-ids="440,1,166,382,1986,6090"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-md-6">
+            <section class="discount_section mt-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="detail-box text-center">
+                                <h5>Account Details</h5>
+                                <div><a href="javascript:void(0);" id="getMyAccount" class="button">Get My Account</a></div>
+                                <div><a href="javascript:void(0);" id="DeployedContractAddress" class="button">Deployed Contract Address</a></div>
+                                <div><a href="javascript:void(0);" id="getBalance" class="button">Current Contract Balance</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <div class="col-md-6">
+            <section class="discount_section mt-5 mb-5" style="height:300px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="detail-box text-center">
+                                <h5>Deposit Funds</h5>
+                                <form>
+                                    <input type="number" id="depositFundValue" class="form-control" placeholder="enter eth value.." required>
+                                    <a href="javascript:void(0)" id="depositFund" class="button">Deposit Funds to Contract</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-md-6">
+            <section class="discount_section mt-5 mb-5" style="height:300px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="detail-box text-center">
+                                <h5>Withdraw Funds</h5>
+                                <form>
+                                    <input type="text" id="withdrawAddress" class="form-control" placeholder="enter address ..." required>
+                                    <input type="number" id="withdrawValue" class="mt-2 form-control" placeholder="enter eth value.." required>
+                                    <a href="javascript:void(0)" id="withdrawFunds" class="button">Withdraw Funds from Contract</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/web3.js"></script>
+    <script src="js/api.js"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
